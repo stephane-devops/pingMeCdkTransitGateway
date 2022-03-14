@@ -36,7 +36,7 @@ public class VpcStack extends Stack {
 
             Vpc vpc = Vpc.Builder.create(this, "vpcVpnPing-"+index)
                     .subnetConfiguration(
-                            com.sun.tools.javac.util.List.of(
+                            List.of(
                                     subnetConfigurationPrivate,subnetConfigurationPublic
                             )
                     )
